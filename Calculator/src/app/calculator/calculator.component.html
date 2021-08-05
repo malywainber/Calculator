@@ -1,0 +1,17 @@
+<div class="wrap-history">
+<h2>calculation history</h2>
+
+<ul>
+  <li *ngFor="let calculator of calculation">
+  <div class="calculator-history">{{calculator.Num1}}</div>
+   <div class="calculator-history">{{calculator.Operator}}</div>
+   <div class="calculator-history">{{calculator.Num2}}</div>
+   <div class="calculator-history">=</div>
+   <div class="calculator-history">{{calculator.Sum}}</div>
+   <div class="calculator-history btn-delet" (click)="delete(calculator)">delet</div>
+   <div class="calculator-history btn-update"  (click)="update(calculator)">update</div>
+   </li>
+  
+</ul>
+
+</div>

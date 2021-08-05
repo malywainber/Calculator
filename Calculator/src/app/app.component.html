@@ -1,0 +1,18 @@
+
+<div class='wrap'>
+<div class="Loading" *ngIf="Loading">
+  <div class="txt-loading" >please wait</div>
+</div>
+
+
+<input class="calc"  type="number" [(ngModel)]="num1" />
+<select class="calc" [value]="operator"   >  
+   <option *ngFor="let operatotr of operatotrsList">{{operatotr}}</option>  
+ </select> 
+<input class="calc" type="number" [(ngModel)]="num2"/>
+<div class='calc btn' (click)="calc()">=</div>
+<div class="calc res">{{sum}}</div>
+ <app-calculator *ngIf="viewHistory" [calculation]="calculation" (calculatrUpdate)="updateCalculatr($event)" (calculatrDelete)="deleteCalculatr($event)"></app-calculator>
+ </div>
+ 
+<router-outlet></router-outlet> 

@@ -1,0 +1,15 @@
+.calculator-history{
+    display: inline-block;
+    margin: 0.2vw;
+    }
+    .wrap-history{
+        border: 2px solid ;
+      /* //  width: 25%; */
+    }
+    .btn-delet{
+        border: 2px solid;
+    }
+    .btn-update{
+        border: 2px solid; 
+      
+    }
